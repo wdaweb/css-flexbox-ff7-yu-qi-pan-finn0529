@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    html,body{
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      font-family:'華康行楷體W5';
+      
+    }
+    .container{
+      width: 650px;
+      height: 90%;
+      position: absolute;
+      left: 50%;
+      top: 50%;transform: translate(-50%,-50%);
+    }
+
+    .outside{
+      width: 500px;
+      height: 550px;
+      position: absolute;
+      left: 50%;
+      top: 50%;transform: translate(-50%,-50%);
+      border: 1px solid #000;
+    }
+
+    table{
+      width: 400px;
+      height: 450px;
+
+      border-collapse:collapse;
+      position: absolute;
+      left: 50%;
+      top: 50%;transform: translate(-50%,-50%);
+      border: 1px solid #000;
+      
+    }
+    tr,td{
+      border: 1px solid #000;
+    }
+.inside{
+  width: 450px;
+  height: 490px;
+  position: absolute;
+  left: 50%;
+  top: 50%;transform: translate(-50%,-50%);
+
+
+}
+
+.blackside{
+  width: 450px;
+  height: 240px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+
+}
+
+.blackside::before{
+  content: "";
+  width: 138px;
+  height: 1px;
+  border-top: 1px solid #000;
+  position: absolute;
+  transform:translateX(-50%) rotate(45deg) ;
+
+  top: 29%;
+  left: 50%;
+
+}
+.blackside::after{
+  content: "";
+  width: 138px;
+  height: 1px;
+  border-top: 1px solid #000;
+  position: absolute;
+  transform:translateX(-50%) rotate(-45deg) ;
+
+  top: 29%;
+  left: 50%;
+  z-index: -1;
+}
+
+.redside{
+  width: 450px;
+  height: 240px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+
+}
+.redside::before{
+  content: "";
+  width: 138px;
+  height: 1px;
+  border-top: 1px solid #000;
+  position: absolute;
+  transform:translateX(-50%) rotate(45deg) ;
+
+  bottom: 29%;
+  left: 50%;
+
+}
+.redside::after{
+  content: "";
+  width: 138px;
+  height: 1px;
+  border-top: 1px solid #000;
+  position: absolute;
+  transform:translateX(-50%) rotate(-45deg) ;
+
+  bottom: 29%;
+  left: 50%;
+  z-index: -1;
+  
+}
+
+.chess{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.black{
+  color: #000;
+}
+
+.Btop{
+  width: 440px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+
+  justify-content:space-between;
+
+}
+.Bcenter{
+  width: 340px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+
+  justify-content:space-between;
+
+}
+
+.Bbottom{
+  width: 440px;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  display: flex;
+
+  justify-content:space-between;
+
+}
+
+.red{
+  color: red;
+}
+
+.Rbottom{
+  width: 440px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+
+  justify-content:space-between;
+
+}
+.Rcenter{
+  width: 340px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+
+  justify-content:space-between;
+
+}
+
+.Rtop{
+  width: 440px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  display: flex;
+
+  justify-content:space-between;
+
+}
+.river{
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+.rightW,.leftW{
+  height: 600px;
+  writing-mode: vertical-lr;
+  position: absolute;
+  font-size: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+.rightW{
+  right: 0;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="leftW">棋盤裡，車無輪，馬無韁，叫聲將軍提防提防</p>
+    <div class="outside">
+      
+      <div class="inside">
+        <table>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="river" colspan="8">楚河 &nbsp 漢界</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <div class="blackside">
+        <div class="Btop">
+        <div class="chess black ">車</div>
+        <div class="chess black ">馬</div>
+        <div class="chess black ">象</div>
+        <div class="chess black ">士</div>
+        <div class="chess black ">將</div>
+        <div class="chess black ">士</div>
+        <div class="chess black ">象</div>
+        <div class="chess black ">馬</div>
+        <div class="chess black ">車</div>
+        </div>
+
+        <div class="Bcenter">
+          <div class="chess black ">包</div>
+          <div class="chess black ">包</div>
+        </div>
+
+        <div class="Bbottom">
+          <div class="chess black ">卒</div>
+          <div class="chess black ">卒</div>
+          <div class="chess black ">卒</div>
+          <div class="chess black ">卒</div>
+          <div class="chess black ">卒</div>
+        </div>
+      </div>
+
+      <div class="redside">
+        <div class="Rbottom">
+        <div class="chess red ">俥</div>
+        <div class="chess red ">傌</div>
+        <div class="chess red ">相</div>
+        <div class="chess red ">仕</div>
+        <div class="chess red ">帥</div>
+        <div class="chess red ">仕</div>
+        <div class="chess red ">相</div>
+        <div class="chess red ">傌</div>
+        <div class="chess red ">俥</div>
+        </div>
+
+        <div class="Rcenter">
+          <div class="chess red ">炮</div>
+          <div class="chess red ">炮</div>
+        </div>
+
+        <div class="Rtop">
+          
+          <div class="chess red ">兵</div>
+          <div class="chess red ">兵</div>
+          <div class="chess red ">兵</div>
+          <div class="chess red ">兵</div>
+          <div class="chess red ">兵</div>
+        </div>
+      </div>
+      
+
+      </div>
+      
+    </div>
+    <p class="rightW">圖畫裡，龍不吟，虎不嘯，小小書僮可笑可笑</p>
+  </div>
+</body>
+</html>

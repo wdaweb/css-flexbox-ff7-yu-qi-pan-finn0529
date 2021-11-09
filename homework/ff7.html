@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,body{
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h1,p{
+      margin: 0;
+    }
+    
+
+    .card{
+      width: 80%;
+      height: 65%;
+      border: 1px solid #aaa;
+      position: absolute;
+    }
+
+    .bg{
+      width: 100%;
+      height: 100%;
+    }
+    .left{
+      height: 100%;
+      color:white;
+      width: 50%;
+      float: left;
+      position: relative;
+      overflow: hidden;
+
+
+    }
+
+
+    .bg2{
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      right:0 ;
+      
+
+
+    }
+    .available{
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    
+    .ps4{
+      height: 40%;
+      position: absolute;
+      left: 50%;
+      top: 20%;
+      transform: translateX(-50%);
+
+    }
+    .right{
+      height: 50%;
+      width: 50%;
+      float: left;
+      position: relative;
+
+    }
+
+    .cloud{
+      background-color: #aaa;
+    }
+
+    .tifa{
+      background-color: #000;
+      color: white;
+    }
+    .tifa img{
+      position: absolute;
+      bottom: 0;
+      height: 90%;
+    }
+
+    
+    .cloud img{
+      position: absolute;
+      bottom: 0;
+      height: 90%;
+      right: 0;
+    }
+
+    .pT{
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      height: 70%;
+      width: 60%;
+      transform: translateY(-50%);
+      
+    }
+
+    .pB{
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      height: 70%;
+      width: 60%;
+      transform: translateY(-50%);
+      
+    }
+    
+  </style>
+</head>
+<body>
+  <img class="bg" src="./05.ff7_flexbox/bg-full.jpg" alt="">
+  <div class="card">
+    <div class="left">
+      <img class="bg2" src="./05.ff7_flexbox/main.jpg" alt="">
+      <img class="ps4" src="./05.ff7_flexbox/ps4-ff7.png" alt="">
+      <div class="available">
+        
+        <h1>Available Now</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cum dicta error voluptatum, veniam adipisci excepturi beatae tenetur accusamus, laudantium laboriosam ratione!  </p>
+      </div>
+    </div>
+    <div class="cloud right">
+      <img src="./05.ff7_flexbox/cloud.png" alt="">
+      <div class="pT">
+      <h1>Cloud</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cum dicta error voluptatum, veniam adipisci excepturi beatae tenetur accusamus, laudantium laboriosam ratione!  </p>
+      </div>
+    </div>
+    <div class="tifa right">
+      <img src="./05.ff7_flexbox/tifa.png" alt="">
+      <div class="pB">
+      <h1>Tifa</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint cum dicta error voluptatum, veniam adipisci excepturi beatae tenetur accusamus, laudantium laboriosam ratione!  </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
